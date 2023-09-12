@@ -4,13 +4,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TreeItem;
 
-public class UserLayerTreeItemModel extends TreeItem<String>{
-	
-	String[] dummyLayerNames = { "nejo", "duru", "life" };
+public class ProjectLayerTreeItemModel extends TreeItem<String>{
+
+	String[] dummyLayerNames = { "Alarm Bolgeleri", "Filtre Bolgeleri" };
 	
 	ObservableList<TreeItem<String>> layerItems = FXCollections.observableArrayList();
 
-	public UserLayerTreeItemModel() {
+	public ProjectLayerTreeItemModel(){
 		TreeItem<String> childItem_Layer;
 		
 		for(String childLayer_Name: dummyLayerNames) {
@@ -18,9 +18,8 @@ public class UserLayerTreeItemModel extends TreeItem<String>{
 			layerItems.add(childItem_Layer);
 		}
 		
-		this.setValue("KULLANICI KATMANLARI");
+		this.setValue("PROJE KATMANLARI");
 		this.getChildren().addAll(layerItems);
 		this.setExpanded(true);
 	}
-	
 }

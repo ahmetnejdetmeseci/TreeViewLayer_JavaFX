@@ -2,7 +2,9 @@ package Controller;
 
 import AbstractModel.CustomContextMenu;
 import View.ContextMenuView;
+import javafx.collections.ObservableList;
 import javafx.scene.Node;
+import javafx.scene.control.MenuItem;
 
 public class ContextMenuController {
 
@@ -26,5 +28,9 @@ public class ContextMenuController {
 	public void sleepContextMenu() {
 		this.contextMenuView.hide();
 	}
+	
+//	public void setContextMenuModel(ObservableList<MenuItem> mainLayers) {
+//		this.contextMenuView.populateContextMenu(mainLayers);
+//	}
 	
 }

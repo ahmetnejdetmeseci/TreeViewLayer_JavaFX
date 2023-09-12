@@ -20,7 +20,7 @@ public class Main extends Application {
         
         Scene scene = new Scene(view);
         
-//        scene.getStylesheets().add("styles.css");
+        scene.getStylesheets().add("styles.css");
         
         primaryStage.setScene(scene);
         primaryStage.setTitle("TreeView Example");
